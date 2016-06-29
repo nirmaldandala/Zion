@@ -1,0 +1,8 @@
+
+<div>
+	<select ng-init="sales" ng-model="optionslist[0]" ng-change="optionChanged(this.value)">
+		<option ng-repeat="i in optionslist | date: dd.MM.y" value="{{ i }}"> {{ i }}</option>
+	</select>
+	<div id="chart_div" style="width: 900px; height: 500px">
+	</div>
+</div>
